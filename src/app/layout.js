@@ -2,6 +2,7 @@ import { Inter, Roboto, Poppins } from 'next/font/google'
 import './globals.css'
 import Footer from '@/components/footer/Footer'
 import Navbar from '@/components/navbar/Navbar'
+import { ThemeProvider } from '@/context/ThemeContext'
 
 const poppins = Poppins({ subsets: ['latin'], weight: [ '300','400','500','600', '700'] })
 
@@ -15,11 +16,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
      
       <body className={poppins.className}>
+        <ThemeProvider>
         <div className='container'>
       <Navbar />
         {children}
         <Footer />
         </div>
+        </ThemeProvider>
         </body>
        
         
