@@ -15,7 +15,7 @@ export default function About() {
         <div className={styles.imgText}>
           <h1 className={styles.imgTitle}>Digital Storytellers</h1>
           <h2 className={styles.imgDesc}>
-            Handcrafting award winning digital experiences
+            Handcrafting award winning digital experiences with love
           </h2>
         </div>
       </div>
